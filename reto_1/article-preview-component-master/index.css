@@ -1,0 +1,206 @@
+body {
+  height: 100vh;
+  background-color: hsl(210, 46%, 95%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  border-radius: 20px;
+  width: 800px;
+  background-color: #ffffff;
+}
+
+.card {
+  display: inline-flex;
+  height: 100%;
+}
+
+.cardImage {
+  height: 100%;
+  width: 35%;
+  border-radius: 20px 0 0 20px;
+}
+
+.cardBody {
+  padding: 32px 32px 0px 32px;
+}
+
+.cardHeader {
+  color: hsl(217, 19%, 35%);
+  font-size: 25px;
+  font-weight: 700;
+  font-family: Manrope;
+  margin: 0.67em 0;
+}
+
+.cardText {
+  color: hsl(214, 17%, 51%);
+  margin: 16px 0;
+  font-weight: 500;
+  font-family: Manrope;
+  line-height: 28px;
+}
+
+.cardUser {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.UserImage {
+  height: 48px;
+  border-radius: 50%;
+}
+
+.userName {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(217, 19%, 35%);
+  font-family: Manrope;
+}
+
+.date {
+  font-size: 13px;
+  color: hsl(214, 17%, 51%);
+  font-family: Manrope;
+}
+
+.shareButton {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.UserInfo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cardFooter {
+  padding: 8px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardThings {
+  display: flex;
+  flex-direction: column;
+}
+
+.data {
+  margin-left: 10px;
+}
+
+.shareLinks {
+  padding: 0px 20px;
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  top: 475px;
+  right: 171px;
+  width: max-content;
+  height: 80px;
+  border-radius: 20px;
+  display: none;
+  animation: .4s show ease;
+}
+
+.shareLinks.active{
+  display: flex;
+}
+
+@keyframes show{
+  0%{
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+.shareLinks::after {
+  width: 2.5rem;
+  height: 1.6rem;
+  transform: rotate(180deg);
+  background-color: hsl(217, 19%, 35%);
+  position: absolute;
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  content: "";
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  bottom: -1.6rem;
+}
+
+.shareWord {
+  display: flex;
+  align-self: center;
+  letter-spacing: 10px;
+  color: hsl(214, 17%, 51%);
+}
+
+.cardButton {
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+}
+
+@media(max-width: 1100px){
+  
+  .container{
+    width: 100%;
+    height: 61rem;
+    margin: 10px;
+  }
+
+  .card{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .cardThings{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .cardImage{
+    border-radius: 20px 20px 0px 0px;
+    width: 100%;
+    height: 100%;
+  }
+
+  .shareLinks{
+    position: absolute;
+    top: 744px;
+    left: 0px;
+    width:359px;
+    padding: 0px;
+    margin: 0px 6px;
+    height: 80px;
+    border-radius: 0px 0px 20px 20px;
+    z-index: 2;
+  }
+
+  .shareWord{
+    margin-left: 20px;
+  }
+
+  .shareButton{
+    z-index: 3;
+  }
+
+  .shareLinks::after{
+    display: none;
+  }
+}
