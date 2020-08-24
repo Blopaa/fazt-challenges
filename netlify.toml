@@ -1,2 +1,3 @@
 [build]   
   publish = 'challenges/'
+  ignore = "git diff --quiet HEAD^ HEAD sub_dir/"
