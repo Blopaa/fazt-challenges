@@ -88,6 +88,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 .cardThings {
@@ -103,8 +104,8 @@ body {
   padding: 0px 20px;
   background-color: hsl(217, 19%, 35%);
   position: absolute;
-  top: 475px;
-  right: 171px;
+  top: -90px;
+  right: -75px;
   width: max-content;
   height: 80px;
   border-radius: 20px;
@@ -182,9 +183,9 @@ body {
 
   .shareLinks{
     position: absolute;
-    top: 744px;
-    left: 0px;
-    width:359px;
+    top: 10px;
+    left: -7px;
+    width: 100%;
     padding: 0px;
     margin: 0px 6px;
     height: 80px;
