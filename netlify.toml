@@ -1,2 +1,2 @@
 [build]   
-  publish = 'challenges\article-preview\index.html'
+  publish = 'challenges/'
